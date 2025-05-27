@@ -1,0 +1,17 @@
+{
+  "name": "attendance-automation",
+  "version": "1.0.0",
+  "description": "attendance using plawright",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "nodemailer": "^7.0.3",
+    "nodemon": "^3.1.10",
+    "playwright": "^1.52.0"
+  }
+}
