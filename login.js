@@ -3,7 +3,7 @@ const { chromium } = require('playwright');
 const { takeScreenshot, sendMail } = require('./utils');
 
 async function performAttendance(actionButtonSelector, actionName) {
-  const browser = await chromium.launch({ headless: false }); // use headless: true in cron jobs
+  const browser = await chromium.launch({ headless: true }); // use headless: true in cron jobs
   const page = await browser.newPage();
 
   try {
