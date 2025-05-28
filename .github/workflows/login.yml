@@ -2,12 +2,14 @@ name: Login Attendance
 
 on:
   schedule:
-    - cron: '30 3 * * *'  # 9:00 AM IST (IST = UTC+5:30)
+    - cron: '30 3 * * *'  # 9:00 AM IST (UTC+5:30)
   workflow_dispatch:
 
 jobs:
   login:
+    name: Perform Login
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -26,3 +28,5 @@ jobs:
           EMAIL_USER: ${{ secrets.EMAIL_USER }}
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
           NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
+          shUSERNAME: ${{ secrets.shUSERNAME }}
+          shPASSWORD: ${{ secrets.shPASSWORD }}
