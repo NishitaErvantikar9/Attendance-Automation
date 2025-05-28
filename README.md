@@ -36,7 +36,7 @@ A simple Node.js automation script to log attendance on a website and send email
 
 ## Technologies
 
-- Node.js with [Puppeteer](https://github.com/puppeteer/puppeteer) for browser automation.
+- Node.js with [Playwright](https://github.com/playwright) for browser automation.
 - [Nodemailer](https://nodemailer.com/about/) for email delivery.
 - GitHub Actions for scheduling and CI.
 
