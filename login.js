@@ -41,10 +41,12 @@ async function performAttendance(actionButtonSelector, actionName) {
       if (isVisible && !hasDisabledClass) {
         console.log('🟢 Clicking login button...');
         await loginBtn.click();
+        await page.waitForTimeout(3000);
         message = `✅ Attendance ${actionName} successful.`;
         screenshotPath = await takeScreenshot(page, `${actionName}-success`);
       } else {
         message = `ℹ️ Attendance ${actionName} skipped. Button is disabled (already logged in?).`;
+        await page.waitForTimeout(3000);
         screenshotPath = await takeScreenshot(page, `${actionName}-already-done`);
       }
 
