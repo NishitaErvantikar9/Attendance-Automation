@@ -1,5 +1,5 @@
 name: Logout Attendance
-
+# enabling schedule
 on:
   schedule:
     - cron: '30 14 * * *'  # 8:00 PM IST
