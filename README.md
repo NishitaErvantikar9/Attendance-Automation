@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/35dbdc75-74b5-4c84-b960-8bfc3315c79e)
+
 # Attendance Automation
 
 A simple Node.js automation script to log attendance on a website and send email notifications with screenshots. Designed to run scheduled tasks for login and logout at specified times.
