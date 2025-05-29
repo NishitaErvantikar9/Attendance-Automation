@@ -2,7 +2,7 @@ name: Logout Attendance
 # enabling schedule
 on:
   schedule:
-    - cron: '30 14 * * *'  # 8:00 PM IST
+    - cron: '30 14 * * 1-5'  # 8:00 PM IST
   workflow_dispatch:
 
 jobs:
