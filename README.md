@@ -58,4 +58,4 @@ MIT License
 
 ---
 
-*Created by Nishita Ervantikar*
+*Created by Nishita Ervantikar *
